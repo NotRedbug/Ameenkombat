@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="style.css" rel="stylesheet" type="text/css" />
+<title>shibkombat</title>
+</head>
+    <div class="filter"></div>
+<body>
+    <div style="background-color:;padding:20px;width:auto;height:100px;box-shadow:3px 0px 10px rgba(0,0,0,0.1);border-radius:">
+    <div> <headingname style="color:#f2f2f2;"> AMEEN KOMBAT🐹 </headingname>
+    
+    </div>
+    
+    </div>
+    
+<div
+  style="border-color:#f2f2f2; padding: 20px; border-radius: 10px;text-align: center;top:40%;margin: 20px auto;height: 300px;min-width:240px; max-width: 800px;opactiy:0.8;
+    max-height: 700px;">
+    <div>
+<button class="floating-button" id="clickButton" onclick="audio1();incrementCount()"></button> 
+   </div>
+</div>
+<div id="count" style="text-align: center;margin: 20px auto;height: 100px;min-width:240px; max"> <numbercount>🪙 0 </numbercount> </div>
+  
+<p id="text" style="display: none; position: absolute; top: 70%; left: 50%; transform: translate(-50%, -50%); font-size: 30px; color: #fff; text-align: center;text-font:bold;font-family: 'Marcellus',serif;font-weight: 500;font-style: normal"> sponser:ABBAS™ </p>
+    <!-- button content -->
+    <style>
+       .floating-button { left: 10%; bottom: 170px; position: centre; width: 50px; height: 50px;
+           background-image: url('https://github.com/NotRedbug/Shibinkombat/assets/168013587/556f763d-6b01-4ebc-ad23-8b8acff4d9e0');
+    
+      background-size: cover; 
+      background-color: transparent;/* Adjust the background image size to cover the entire button */ 
+      background-repeat: no-repeat;
+      border-radius:5px;/* Prevent the background image from repeating */ 
+      width: 300px; /* Set the width of the button */ 
+      height: 300px; /* Set the height of the button */ 
+      color: black; /* Set the text color of the button */ 
+      border: none; /* Remove the button border */ 
+      text-align: right; /* Align the text to the right */;
+      /* Center the text within the button */ 
+      font-size: 18px; 
+      hoveropacity: 30;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        position: left;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        animation: floatButton 3s infinite;
+    }
+
+    @keyframes floatButton {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    .floating-button:active {
+        transform: translateY(0);
+        animation: clickButton 0.3s;
+    }
+
+    @keyframes clickButton {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(0.9);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+        
+    </style>
+    <script> function audio1() {
+          var audio = document.getElementById("audio");
+          audio.play();
+        }
+      </script>
+      <audio id=audio> <source src="https://github.com/NotRedbug/Shibinkombat/assets/168013587/d3259702-df66-4453-ac56-5c826b576087" type="audio/mpeg"> </audio>
+<!--  NEW ADDED -->
+
+<script>
+setTimeout(function() {
+  document.getElementById('text').style.display = 'block';
+  
+setTimeout(function(){  document.getElementById('text').style.display = 'none';
+    
+  },1000);
+}, 3000); // 5000 milliseconds = 5 seconds
+</script>
+
+
+<img id="image" src="https://github.com/NotRedbug/Shibinkombat/assets/168013587/333ea1fd-34ea-4349-9031-07979f72af78" alt="Description of the image">
+
+    
+<!-- till here -->
+<script>
+setTimeout(function() {
+  document.getElementById('image').style.display = 'block';
+  
+setTimeout(function(){  document.getElementById('image').style.display = 'none';
+    
+  },1000);
+}, 3000); // 5000 milliseconds = 5 seconds
+</script>
+
+    
+<script> 
+    let clickCount = 0;
+
+    function incrementCount() {
+        clickCount++;
+        document.getElementById('count').textContent = '🪙' + clickCount;
+        if (navigator.vibrate){navigator.vibrate([100]);}
+    }
+</script>
+</body>
+</html>
